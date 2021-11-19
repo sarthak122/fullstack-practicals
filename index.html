@@ -10,8 +10,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./CSS/practical12.css" />
+    <script src="JS/index-js.js"></script>
   </head>
+  <style>
+    .loader-container{
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0 ,0, 0, 0.6);
+}
+.loader-container img{
+  height: 200px;
+}
+  </style>
   <body>
+    <div class="loader-container" id="hide">
+      <!-- <div class="loader"></div> -->
+      <img src="Assets/loader.gif" alt="">
+    </div>
     <table>
       <thead>
         <tr>
